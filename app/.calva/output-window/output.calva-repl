@@ -1,0 +1,71 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/mixanizzm/NSU/Clojure/labs/app; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:60742 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉main꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉main꞉> 
+; Jack-in done.
+clj꞉main꞉> 
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///Users/mixanizzm/NSU/Clojure/labs/app/.nrepl-port ...
+; Using host:port localhost:60742 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉main꞉> 
+#'main/-main
+clj꞉main꞉> 
+(-main)
+; (абаба обаба аоаба боаба баоба оаоба абоба обоба абаоа обаоа аоаоа боаоа бабоа оабоа аобоа бобоа бабаб оабаб аобаб бобаб баоаб оаоаб абоаб обоаб абаоб обаоб аоаоб боаоб бабоб оабоб аобоб бобоб бабао оабао аобао бобао баоао оаоао абоао обоао абабо обабо аоабо боабо баобо оаобо абобо обобо)
+; (бобоб аобоб оабоб бабоб боаоб аоаоб обаоб абаоб обоаб абоаб оаоаб баоаб бобаб аобаб оабаб бабаб обобо абобо оаобо баобо боабо аоабо обабо абабо обоао абоао оаоао баоао бобао аобао оабао бабао бобоа аобоа оабоа бабоа боаоа аоаоа обаоа абаоа обоба абоба оаоба баоба боаба аоаба обаба абаба)
+; (абаба абабо абаоа абаоб абоаб абоао абоба абобо аоаба аоабо аоаоа аоаоб аобаб аобао аобоа аобоб бабаб бабао бабоа бабоб баоаб баоао баоба баобо боаба боабо боаоа боаоб бобаб бобао бобоа бобоб оабаб оабао оабоа оабоб оаоаб оаоао оаоба оаобо обаба обабо обаоа обаоб обоаб обоао обоба обобо)
+nil
+clj꞉main꞉> 
