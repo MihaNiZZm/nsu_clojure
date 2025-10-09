@@ -3,10 +3,10 @@
 
 (defn get-valid-symbols
   [word alphabet result]
-  (let [banned-symbol (str (first word))]
+  (let [banned-symbol (str (last word))]
     (if (= (count alphabet) 0)
       result
-      (let [current (first alphabet)
+      (let [current (str (first alphabet))
             rest-alphabet (rest alphabet)]
         (if (= current banned-symbol)
           (recur word rest-alphabet result)
@@ -14,29 +14,30 @@
 
 (defn append-word
   [word alphabet result]
-  (let [valid-symbols (get-valid-symbols word alphabet '())]
-    (if (= (count valid-symbols) 0)
-      result
-      (let [cur-symbol (first valid-symbols)
-            rest-symbols (rest valid-symbols)]
-        (recur word rest-symbols (conj result (str cur-symbol word)))))))
+  (if (= (count alphabet) 0)
+    result
+    (let [cur-symbol (first alphabet)
+          rest-symbols (rest alphabet)]
+      (recur word
+             rest-symbols
+             (conj result (str word cur-symbol))))))
 
 (defn expand-words
   [words alphabet result]
-  (if (= (count words) 0) 
+  (if (empty? words)
     result
     (let [word (first words)
           rest-words (rest words)
-          valid-next-symbols (get-valid-symbols word alphabet '())
-          new-words (append-word word valid-next-symbols '())]
-      (recur rest-words alphabet (concat result new-words)))))
+          valid-next-symbols (get-valid-symbols word alphabet [])
+          new-words (append-word word valid-next-symbols [])]
+      (recur rest-words alphabet (vec (concat result new-words))))))
 
 (defn build-words
   ([len alphabet]
-   (build-words len alphabet '("")))
+   (seq (build-words len alphabet [""])))
   ([len alphabet words]
-   (if (= 0 len)
+   (if (= len 0)
      words
      (recur (dec len)
             alphabet
-            (expand-words words alphabet '())))))
+            (expand-words words alphabet [])))))

@@ -3,7 +3,7 @@
 
 (defn get-valid-symbols
   [word alphabet]
-  (let [banned-symbol (str (first word))]
+  (let [banned-symbol (str (last word))]
     (if (= (count alphabet) 0)
       '()
       (let [current (first alphabet)
@@ -19,7 +19,7 @@
       '()
       (let [cur-symbol (first valid-symbols)
             rest-symbols (rest valid-symbols)]
-        (cons (str cur-symbol word)
+        (cons (str word cur-symbol)
               (append-word word rest-symbols))))))
 
 (defn expand-words
