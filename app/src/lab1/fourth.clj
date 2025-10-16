@@ -18,7 +18,6 @@
                               (get-valid-symbols word alphabet)))
                words)))
 
-
 (defn build-words
   [len alphabet]
   (if (= len 0)

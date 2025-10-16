@@ -37,7 +37,7 @@ You can configure this with the setting:
 ; 
 
 ; Starting Jack-in: (cd /Users/mixanizzm/NSU/Clojure/labs/app; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
-; Using host:port 127.0.0.1:60742 ...
+; Using host:port 127.0.0.1:64768 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
@@ -48,357 +48,49 @@ about why stdout printed to this file is prepended with `;` to be line comments.
 clj꞉main꞉> 
 ; Jack-in done.
 clj꞉main꞉> 
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Connecting ...
-; Reading port file: file:///Users/mixanizzm/NSU/Clojure/labs/app/.nrepl-port ...
-; Using host:port localhost:60742 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-nil
+(range 1 5)
+(1 2 3 4)
 clj꞉main꞉> 
 #'main/-main
 clj꞉main꞉> 
 (-main)
-; (абаба обаба аоаба боаба баоба оаоба абоба обоба абаоа обаоа аоаоа боаоа бабоа оабоа аобоа бобоа бабаб оабаб аобаб бобаб баоаб оаоаб абоаб обоаб абаоб обаоб аоаоб боаоб бабоб оабоб аобоб бобоб бабао оабао аобао бобао баоао оаоао абоао обоао абабо обабо аоабо боабо баобо оаобо абобо обобо)
-; (бобоб аобоб оабоб бабоб боаоб аоаоб обаоб абаоб обоаб абоаб оаоаб баоаб бобаб аобаб оабаб бабаб обобо абобо оаобо баобо боабо аоабо обабо абабо обоао абоао оаоао баоао бобао аобао оабао бабао бобоа аобоа оабоа бабоа боаоа аоаоа обаоа абаоа обоба абоба оаоба баоба боаба аоаба обаба абаба)
-; (абаба абабо абаоа абаоб абоаб абоао абоба абобо аоаба аоабо аоаоа аоаоб аобаб аобао аобоа аобоб бабаб бабао бабоа бабоб баоаб баоао баоба баобо боаба боабо боаоа боаоб бобаб бобао бобоа бобоб оабаб оабао оабоа оабоб оаоаб оаоао оаоба оаобо обаба обабо обаоа обаоб обоаб обоао обоба обобо)
+; num-int 1: 0.5 , theory: 0.5
+; num-int 2: 2.0 , theory: 2.0
+; num-int 3: 4.499999999999999 , theory: 4.5
 nil
 clj꞉main꞉> 
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Connecting ...
-; Reading port file: file:///Users/mixanizzm/NSU/Clojure/labs/app/.nrepl-port ...
-; Using host:port localhost:60742 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-nil
-clj꞉main꞉> 
-"Please see https://calva.io/output/#about-stdout-in-the-repl-window
-about why stdout printed to this file is prepended with `;` to be line comments."
-clj꞉main꞉> 
-(-main)
-; (абаба обаба аоаба боаба баоба оаоба абоба обоба абаоа обаоа аоаоа боаоа бабоа оабоа аобоа бобоа бабаб оабаб аобаб бобаб баоаб оаоаб абоаб обоаб абаоб обаоб аоаоб боаоб бабоб оабоб аобоб бобоб бабао оабао аобао бобао баоао оаоао абоао обоао абабо обабо аоабо боабо баобо оаобо абобо обобо)
-; (бобоб аобоб оабоб бабоб боаоб аоаоб обаоб абаоб обоаб абоаб оаоаб баоаб бобаб аобаб оабаб бабаб обобо абобо оаобо баобо боабо аоабо обабо абабо обоао абоао оаоао баоао бобао аобао оабао бабао бобоа аобоа оабоа бабоа боаоа аоаоа обаоа абаоа обоба абоба оаоба баоба боаба аоаба обаба абаба)
-; (абаба абабо абаоа абаоб абоаб абоао абоба абобо аоаба аоабо аоаоа аоаоб аобаб аобао аобоа аобоб бабаб бабао бабоа бабоб баоаб баоао баоба баобо боаба боабо боаоа боаоб бобаб бобао бобоа бобоб оабаб оабао оабоа оабоб оаоаб оаоао оаоба оаобо обаба обабо обаоа обаоб обоаб обоао обоба обобо)
-nil
-clj꞉main꞉> 
-#'lab1.first/build-words
-clj꞉lab1.first꞉> 
+#'lab2.integral/check-result
+clj꞉lab2.integral꞉> 
 #'main/-main
 clj꞉main꞉> 
 (-main)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-; (боб аоб оаб баб обо або оао бао боа аоа оба аба)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
+; Integral 0 to 1: 0.5 , expected: 0.5
+; Integral 0 to 2: 2.0 , expected: 2.0
+; Integral 0 to 3: 4.499999999999999 , expected: 4.5
 nil
 clj꞉main꞉> 
-#'lab1.second/build-words
-clj꞉lab1.second꞉> 
+#'lab2.integral/check-result
+clj꞉lab2.integral꞉> 
 #'main/-main
 clj꞉main꞉> 
 (-main)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-; Execution error (IllegalArgumentException) at lab1.second/get-valid-symbols (REPL:11).
-; Don't know how to create ISeq from: java.lang.Character
+; Integral 0 to 1: 0.4999999999999991 , expected: 0.5
+; Integral 0 to 2: 2.0000000000000013 , expected: 2.0
+; Integral 0 to 3: 4.500000000000001 , expected: 4.5
+nil
 clj꞉main꞉> 
-#'lab1.second/build-words
-clj꞉lab1.second꞉> 
+#'lab2.integral/check-result
+clj꞉lab2.integral꞉> 
 #'main/-main
 clj꞉main꞉> 
 (-main)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-
-(-main)
-; Execution error (OutOfMemoryError) at lab1.second/append-word (REPL:18).
-; Java heap space
-clj꞉main꞉> 
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Connecting ...
-; Reading port file: file:///Users/mixanizzm/NSU/Clojure/labs/app/.nrepl-port ...
-; Using host:port localhost:60742 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Integral 0 to 1: 0.5 , expected: 0.5
+; Integral 0 to 2: 2.0 , expected: 2.0
+; Integral 0 to 3: 4.499999999999999 , expected: 4.5
 nil
-clj꞉main꞉> 
-(-main)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-; nREPL Connection was closed
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Connecting ...
-; Reading port file: file:///Users/mixanizzm/NSU/Clojure/labs/app/.nrepl-port ...
-; Using host:port localhost:60742 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-nil
-clj꞉main꞉> 
-; ERROR: Unhandled REPL handler exception processing message {:op clojuredocs-refresh-cache, :id 5, :session b2c097cf-df32-4eac-9d4e-307a14187700}
-; java.net.SocketException: Socket closed
-; 	at java.base/sun.nio.ch.NioSocketImpl.ensureOpenAndConnected(NioSocketImpl.java:162)
-; 	at java.base/sun.nio.ch.NioSocketImpl.beginWrite(NioSocketImpl.java:361)
-; 	at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:406)
-; 	at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:439)
-; 	at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:813)
-; 	at java.base/java.net.Socket$SocketOutputStream.implWrite(Socket.java:1098)
-; 	at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1085)
-; 	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:123)
-; 	at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:182)
-; 	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:110)
-; 	at nrepl.socket$eval677$fn__678.invoke(socket.clj:259)
-; 	at nrepl.socket$eval648$fn__649$G__639__664.invoke(socket.clj:249)
-; 	at nrepl.transport$safe_write_bencode.invokeStatic(transport.clj:120)
-; 	at nrepl.transport$bencode$fn__960.invoke(transport.clj:129)
-; 	at nrepl.transport.FnTransport.send(transport.clj:36)
-; 	at nrepl.middleware.print$send_nonstreamed.invokeStatic(print.clj:115)
-; 	at nrepl.middleware.print$printing_transport$reify__1378.send(print.clj:133)
-; 	at nrepl.middleware.caught$caught_transport$reify__1414.send(caught.clj:54)
-; 	at cider.nrepl.middleware.clojuredocs$handle_clojuredocs.invokeStatic(clojuredocs.clj:28)
-; 	at cider.nrepl.middleware.clojuredocs$handle_clojuredocs.invoke(clojuredocs.clj:27)
-; 	at clojure.lang.Var.invoke(Var.java:388)
-; 	at cider.nrepl$wrap_clojuredocs$fn__5505.invoke(nrepl.clj:799)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_slurp$fn__5299.invoke(nrepl.clj:167)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_format$fn__5349.invoke(nrepl.clj:241)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_info$fn__5357.invoke(nrepl.clj:276)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_version$fn__5489.invoke(nrepl.clj:774)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_profile$fn__5407.invoke(nrepl.clj:591)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_apropos$fn__5307.invoke(nrepl.clj:175)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at nrepl.middleware.completion$wrap_completion$fn__2159.invoke(completion.clj:58)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_resource$fn__5431.invoke(nrepl.clj:660)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_undef$fn__5479.invoke(nrepl.clj:763)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_test$fn__5455.invoke(nrepl.clj:715)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_refresh$fn__5415.invoke(nrepl.clj:614)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_classpath$fn__5315.invoke(nrepl.clj:183)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_trace$fn__5463.invoke(nrepl.clj:739)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at nrepl.middleware.lookup$wrap_lookup$fn__2235.invoke(lookup.clj:52)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_reload$fn__5423.invoke(nrepl.clj:639)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_xref$fn__5497.invoke(nrepl.clj:784)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_spec$fn__5439.invoke(nrepl.clj:670)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at nrepl.middleware.interruptible_eval$interruptible_eval$fn__1465.invoke(interruptible_eval.clj:147)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at nrepl.middleware.session$add_stdin$fn__1581.invoke(session.clj:420)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at main$eval5591$fn__5592$fn__5594.invoke(form-init12649596499536906081.clj:1)
-; 	at nrepl.middleware.load_file$wrap_load_file$fn__2191.invoke(load_file.clj:81)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_tracker$fn__5471.invoke(nrepl.clj:752)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_out$fn__5399.invoke(nrepl.clj:582)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_debug$fn__5333.invoke(nrepl.clj:210)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_enlighten$fn__5341.invoke(nrepl.clj:237)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_content_type$fn__5291.invoke(nrepl.clj:153)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_inspect$fn__5367.invoke(nrepl.clj:307)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at nrepl.middleware.caught$wrap_caught$fn__1423.invoke(caught.clj:97)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_macroexpand$fn__5383.invoke(nrepl.clj:532)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_log$fn__5375.invoke(nrepl.clj:409)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at cider.nrepl$wrap_stacktrace$fn__5447.invoke(nrepl.clj:686)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16)
-; 	at nrepl.middleware.print$wrap_print$fn__1393.invoke(print.clj:196)
-; 	at nrepl.middleware$wrap_conj_descriptor$fn__1177.invoke(middleware.clj:16Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Connecting ...
-; Reading port file: file:///Users/mixanizzm/NSU/Clojure/labs/app/.nrepl-port ...
-; Using host:port localhost:60742 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-nil
-clj꞉main꞉> 
-(-main)
-; (абаба абабо абаоа абаоб абоаб абоао абоба абобо аоаба аоабо аоаоа аоаоб аобаб аобао аобоа аобоб бабаб бабао бабоа бабоб баоаб баоао баоба баобо боаба боабо боаоа боаоб бобаб бобао бобоа бобоб оабаб оабао оабоа оабоб оаоаб оаоао оаоба оаобо обаба обабо обаоа обаоб обоаб обоао обоба обобо)
-; nREPL Connection was closed
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: (cd /Users/mixanizzm/NSU/Clojure/labs/app; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
-; Using host:port 127.0.0.1:56819 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-nil
-clj꞉main꞉> 
-; Jack-in done.
-clj꞉main꞉> 
-(-main)
-; (абаба абабо абаоа абаоб абоаб абоао абоба абобо аоаба аоабо аоаоа аоаоб аобаб аобао аобоа аобоб бабаб бабао бабоа бабоб баоаб баоао баоба баобо боаба боабо боаоа боаоб бобаб бобао бобоа бобоб оабаб оабао оабоа оабоб оаоаб оаоао оаоба оаобо обаба обабо обаоа обаоб обоаб обоао обоба обобо)
-; Execution error (IllegalArgumentException) at lab1.second/get-valid-symbols (second.clj:11).
-; Don't know how to create ISeq from: java.lang.Character
-clj꞉main꞉> 
-(get-valid-symbols "aba" '("a" "b" "c") '(""))
-; Syntax error compiling at (.calva/output-window/output.calva-repl:277:1).
-; Unable to resolve symbol: get-valid-symbols in this context
-clj꞉main꞉> 
-#'lab1.second/get-valid-symbols
-clj꞉lab1.second꞉> 
-(get-valid-symbols "aba" '("a" "b" "c") '(""))
-((("") \b) \c)
-clj꞉lab1.second꞉> 
-(get-valid-symbols "aba" '("a" "b" "c") '())
-((() \b) \c)
-clj꞉lab1.second꞉> 
-#'lab1.second/get-valid-symbols
-clj꞉lab1.second꞉> 
-(get-valid-symbols "aba" '("a" "b" "c") '())
-((() \b) \c)
-clj꞉lab1.second꞉> 
-#'lab1.second/get-valid-symbols
-clj꞉lab1.second꞉> 
-#'lab1.second/get-valid-symbols
-clj꞉lab1.second꞉> 
-(get-valid-symbols "aba" '("a" "b" "c") '())
-((() \b) \c)
-clj꞉lab1.second꞉> 
-#'lab1.second/get-valid-symbols
-clj꞉lab1.second꞉> 
-(get-valid-symbols "aba" '("a" "b" "c") '())
-("c" "b")
-clj꞉lab1.second꞉> 
-#'lab1.second/get-valid-symbols
-clj꞉lab1.second꞉> 
-(get-valid-symbols "aba" '("a" "b" "c") '())
-("c" "c" "c")
-clj꞉lab1.second꞉> 
-#'lab1.second/get-valid-symbols
-clj꞉lab1.second꞉> 
-(get-valid-symbols "aba" '("a" "b" "c") '())
-("b" "c")
-clj꞉lab1.second꞉> 
-#'lab1.second/append-word
-clj꞉lab1.second꞉> 
-(append-word "aba" '("a" "b" "c") '())
-("caba" "baba")
-clj꞉lab1.second꞉> 
-#'lab1.second/append-word
-clj꞉lab1.second꞉> 
-(append-word "aba" '("a" "b" "c") '())
-("abac" "abab")
-clj꞉lab1.second꞉> 
-#'lab1.second/append-word
-clj꞉lab1.second꞉> 
-(append-word "aba" '("a" "b" "c") '())
-("abab" "abac")
-clj꞉lab1.second꞉> 
-#'lab1.second/build-words
-clj꞉lab1.second꞉> 
-#'main/-main
-clj꞉main꞉> 
-(-main)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-; ()
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-nil
-clj꞉main꞉> 
-#'lab1.second/expand-words
-clj꞉lab1.second꞉> 
-(expand-words '("aba") '("a" "b" "c") '())
-("abac" "abab")
-clj꞉lab1.second꞉> 
-#'lab1.second/build-words
-clj꞉lab1.second꞉> 
-#'main/-main
-clj꞉main꞉> 
-(-main)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-; (боо боа бао баа обб оба оаб оаа аоо аоб або абб)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-nil
-clj꞉main꞉> 
-#'lab1.second/build-words
-clj꞉lab1.second꞉> 
-(append-word "aba" '("a" "b" "c") '())
-("abab" "abac")
-clj꞉lab1.second꞉> 
-(build-words 3 '("a" "b" "c"))
-("acc" "acb" "cab" "caa" "bac" "baa" "bca" "bcc" "cba" "cbb" "abb" "abc")
-clj꞉lab1.second꞉> 
-(expand-words '("aba") '("a" "b" "c") '())
-("abac" "abab")
-clj꞉lab1.second꞉> 
-#'lab1.second/expand-words
-clj꞉lab1.second꞉> 
-(expand-words '("aba") '("a" "b" "c") '())
-("abab" "abac")
-clj꞉lab1.second꞉> 
-#'lab1.second/build-words
-clj꞉lab1.second꞉> 
-(build-words 3 '("a" "b" "c"))
-("baa" "bac" "bca" "bcc" "abb" "abc" "acb" "acc" "caa" "cab" "cba" "cbb")
-clj꞉lab1.second꞉> 
-#'lab1.second/build-words
-clj꞉lab1.second꞉> 
-(build-words 3 '("a" "b" "c"))
-("bab" "bac" "bca" "bcb" "aba" "abc" "aca" "acb" "cab" "cac" "cba" "cbc")
-clj꞉lab1.second꞉> 
-#'lab1.second/build-words
-clj꞉lab1.second꞉> 
-(build-words 3 '("a" "b" "c"))
-["aba" "abc" "aca" "acb" "bab" "bac" "bca" "bcb" "cab" "cac" "cba" "cbc"]
-clj꞉lab1.second꞉> 
-#'main/-main
-clj꞉main꞉> 
-(-main)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-; [аба або аоа аоб баб бао боа боб оаб оао оба обо]
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-nil
-clj꞉main꞉> 
-#'lab1.second/build-words
-clj꞉lab1.second꞉> 
-#'main/-main
-clj꞉main꞉> 
-(-main)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
-; (аба або аоа аоб баб бао боа боб оаб оао оба обо)
+clj꞉main꞉> (-main)
+; Integral 0 to 1: 0.5 , expected: 0.5
+; Integral 0 to 2: 2.0 , expected: 2.0
+; Integral 0 to 3: 4.499999999999999 , expected: 4.5
 nil
 clj꞉main꞉> 
