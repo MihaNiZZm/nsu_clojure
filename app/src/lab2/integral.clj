@@ -13,30 +13,6 @@
        (* sign h
           (+ (/ (+ (f 0) (f x)) 2) sum-fx))))))
 
-(defn integral-memo
-  ([f] (integral-memo f 1e-3))
-  ([f h]
-   (let [int-fn (integral f h)]
-     (memoize int-fn))))
-
-(defn integral-seq
-  ([f] (integral-seq f 1e-3))
-  ([f h]
-   (let [partial-sums
-         (reductions
-          (fn [[_ acc] x]
-            [x (+ acc (* h (/ (+ (f x) (f (- x h))) 2)))])
-          [0 0.0]
-          (map #(* h %) (iterate inc 1)))]
-     (fn [x]
-       (let [sign (if (neg? x) -1 1)
-             x    (Math/abs x)
-             idx  (long (Math/round (/ x h)))
-             [xk intk] (nth partial-sums idx)
-             delta (- x xk)
-             tail-area (* delta (/ (+ (f xk) (f x)) 2))]
-         (* sign (+ intk tail-area)))))))
-
 (defn check-result
   []
   (let [f-x (fn [x] x)
