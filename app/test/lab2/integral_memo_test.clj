@@ -29,18 +29,18 @@
 
 (deftest test-memoization-saves-time-on-bigger-close-argument
   (let [integral (memo/mem-integral (fn [x] x))
-        time1 (test-utils.test-utils/elapsed-ms #(integral 5))
-        time2 (test-utils.test-utils/elapsed-ms #(integral 6))]
+        time1 (elapsed-ms #(integral 5))
+        time2 (elapsed-ms #(integral 6))]
     (is (> time1 time2))))
 
 (deftest test-memoization-saves-time-on-the-same-argument
   (let [integral (memo/mem-integral (fn [x] x))
-        time1 (test-utils.test-utils/elapsed-ms #(integral 7))
-        time2 (test-utils.test-utils/elapsed-ms #(integral 7))]
+        time1 (elapsed-ms #(integral 7))
+        time2 (elapsed-ms #(integral 7))]
     (is (> time1 time2))))
 
 (deftest test-memoization-saves-time-on-smaller-close-argument
   (let [integral (memo/mem-integral (fn [x] x))
-        time1 (test-utils.test-utils/elapsed-ms #(integral 9))
-        time2 (test-utils.test-utils/elapsed-ms #(integral 8))]
+        time1 (elapsed-ms #(integral 9))
+        time2 (elapsed-ms #(integral 8))]
     (is (> time1 time2))))

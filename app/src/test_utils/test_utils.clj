@@ -6,7 +6,9 @@
   ([a b] (approx= a b 1e-4))
   ([a b eps] (<= (Math/abs (- a b)) eps)))
 
-(defn elapsed-ms [thunk]
+(defn elapsed-ms 
+  "Показывает, сколько времени заняло выполнение функции thunk в ms."
+  [thunk]
   (let [t0 (System/nanoTime)]
     (thunk)
     (let [t1 (System/nanoTime)]

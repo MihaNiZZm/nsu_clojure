@@ -1,4 +1,4 @@
-(ns lab2.lazy_seq_integral_test
+(ns lab2.lazy-seq-integral-test
   (:require [clojure.test :refer [deftest is]]
             [lab2.lazy-seq-integral :as lazy-seq]
             [test-utils.test-utils :refer [approx=]]))

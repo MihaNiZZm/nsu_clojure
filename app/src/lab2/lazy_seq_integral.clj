@@ -13,5 +13,5 @@
 
 (defn integral [f]
   (fn [x] (if (neg? x)
-            (lazy-integral f x 0 h) 
+            (lazy-integral f x 0 h)
             (lazy-integral f 0 x h))))

@@ -26,14 +26,7 @@
       (memoized-recursive-integral-from-start f x 0 memoized-recursive-integral-from-start)
       (memoized-recursive-integral-from-end f 0 x memoized-recursive-integral-from-end))))
 
-((mem-integral (fn [x] x)) 5)
-
-(defn test-memoization-saves-time-on-bigger-close-argument []
-  (let [integral (mem-integral (fn [x] x))
-        time1 (test-utils.test-utils/elapsed-ms #(integral 5))
-        time2 (test-utils.test-utils/elapsed-ms #(integral 6))]
-    (if (> time1 time2)
-      (println "yes")
-      (println "no"))))
-
-(test-memoization-saves-time-on-bigger-close-argument)
+(defn time-test []
+  (let [f-x (fn [x] x)]
+    (time ((mem-integral f-x) 5))
+    (time ((mem-integral f-x) 6))))
