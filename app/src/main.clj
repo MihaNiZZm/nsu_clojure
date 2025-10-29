@@ -1,10 +1,8 @@
 (ns main
   (:gen-class)
-  (:require [lab2.integral :as simple]
-            [lab2.integral-memo :as memo]
-            [lab2.lazy-seq-integral :as lazy-seq]))
+  (:require [lab3.future-filter :refer [future-filter]]
+            [lab3.lazy-future-filter :refer [lazy-filter]]))
 
 (defn -main []
-  (println ((simple/integral (fn [x] x)) 10))
-  (println ((memo/mem-integral (fn [x] x)) 10))
-  (println ((lazy-seq/integral (fn [x] x)) 10)))
+  (println (future-filter even? (range 1000)))
+  (println (lazy-filter even? (range 1000))))
